@@ -1,0 +1,11 @@
+(define (calculo-media a b c)
+  (let ((media (/ (+ a b c) 3.0)))
+    (cond
+      ((= media 10) "Aprovado com louvor")
+      ((>= media 7) "Aprovado")
+      (else "Reprovado"))))
+
+
+(display (calculo-media 10 9 8));
+
+Resultado: "Aprovado"

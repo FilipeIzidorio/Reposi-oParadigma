@@ -1,9 +1,0 @@
- (define (filtrar-positivos n1 n2 n3 n4 n5 n6 n7 n8 n9 n10)
-(define (analisar-numero n)
-(cond((= n 0) (display "0 é neutro\n"))
-((or (= n -2) (= n -5) (= n -9)) (display (string-append (number->string n) " é uma exceção\n")))
-((> n 0) (display (string-append (number->string n) " é positivo\n")))))
-(map analisar-numero (list n1 n2 n3 n4 n5 n6 n7 n8 n9 n10)))
-
-
-(filtrar-positivos -3 -1 0 1 4 7 -2 -15 5 -59)
