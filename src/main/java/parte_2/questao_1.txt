@@ -1,0 +1,8 @@
+(define (soma-quadrados a b c d e)
+  (let* ((soma (+ (* a a) (* b b) (* c c) (* d d) (* e e))))
+    (if (odd? soma)
+        (- soma 15) ;
+        (+ soma 10)))) ;
+
+
+ (soma-quadrados 1 2 3 4 5)
