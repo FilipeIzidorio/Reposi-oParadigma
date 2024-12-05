@@ -18,9 +18,15 @@ public class Main {
             Calculadora calcExtra = CalculadoraFactory.getCalculadora(TipoCalculadora.EXTRA);
             Calculadora calcBonus = CalculadoraFactory.getCalculadora(TipoCalculadora.BONUS);
 
-            System.out.println("Salário de Alice: " + calcSalario.calcular(f1));
+            System.out.println("\nSalário de Eve: " + calcSalario.calcular(f5));
             System.out.println("Horas extras de Bob: " + calcExtra.calcular(f2));
-            System.out.println("Bônus de Carol: " + calcBonus.calcular(f3));
+            System.out.println("Bônus de Carol: " + calcBonus.calcular(f3)+"\n");
+
+
+
+            System.out.println("Salário de Alice: " + calcSalario.calcular(f1));
+            System.out.println("Horas extras de Alice: " + calcExtra.calcular(f1));
+            System.out.println("Bônus de Alice: " + calcBonus.calcular(f1));
 
             // Teste de exceção
             System.out.println("Salário de Dave: " + calcSalario.calcular(f4));
